@@ -1,0 +1,13 @@
+﻿@using HelloMVC.Entities
+@model IEnumerable<Person>
+
+<ul>
+    @foreach (var person in Model)
+    {
+        <li>
+            <a asp-controller="People" asp-action="Show" asp-route-id="@person.Id">
+                Id: @person.Id - Name: @person.Name
+            </a>
+        </li>
+    }
+</ul>

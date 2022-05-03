@@ -1,0 +1,9 @@
+﻿@using HelloMVC.Models.Person
+@model CreatePersonModel
+
+<form style="display: flex; flex-direction: column" asp-controller="People" asp-action="Create">
+    <input asp-for="Name" />
+    <input asp-for="Age" />
+
+    <button>submit</button>
+</form>

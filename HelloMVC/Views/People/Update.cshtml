@@ -1,0 +1,9 @@
+﻿@using HelloMVC.Models.Person
+@model UpdatePersonModel
+
+<form style="display: flex; flex-direction: column" asp-controller="People" asp-action="Update" asp-route-id="@Model.Id">
+    <input asp-for="Name" />
+    <input asp-for="Age" />
+
+    <button>submit</button>
+</form>
